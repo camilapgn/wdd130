@@ -1,9 +1,14 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
 }
-
+img {
+    
+    margin: 0 auto;
+    max-width: 300px;
+}
 header {
     display: flex;
     align-items: center;
@@ -27,7 +32,38 @@ header nav ul li a {
     text-decoration: none;
     color: #333;
 }
-
+.history {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  .history-content {
+    display: flex; /* Flexbox for horizontal alignment */
+    align-items: center; /* Aligns items vertically */
+    gap: 20px; /* Adds spacing between text and image */
+  }
+  
+  .history-text {
+    flex: 1; /* Ensures the text takes equal width on both sides */
+    text-align: justify; /* Optional: Justify text for clean alignment */
+  }
+  
+  .history-image {
+    flex: 0 0 250px; /* Fixed width for the image */
+    text-align: center; /* Centers the figcaption below the image */
+  }
+  
+  .history-image img {
+    max-width: 100%; /* Ensures the image scales properly */
+    height: auto;
+    border-radius: 5px; /* Optional: Rounded corners */
+  }
+  
+  .history-image figcaption {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 10px;
+  }
 /* Hero Section */
 .hero {
     position: relative;
@@ -102,29 +138,26 @@ header nav ul li a {
     color: #555;
 }
 
-/* Adventure Section */
-.activities {
-    display: flex;
-    justify-content: space-around;
+
+.gallery {
     padding: 20px;
-    background-color: #f9f9f9;
-}
-
-.activity {
+  }
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  .gallery-item img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+  }
+  .gallery-item figcaption {
+    font-size: 0.8rem;
+    color: #555;
+    margin-top: 5px;
     text-align: center;
-}
-
-.activity img {
-    width: 200px;
-    height: 150px;
-    border: 7px solid #e2dfe4;
-    border-radius: 5px;
-}
-
-.activity h3 {
-    margin: 10px 0;
-    font-size: 1.2rem;
-}
+  }
 
 
     footer {

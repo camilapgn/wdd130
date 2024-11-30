@@ -1,5 +1,5 @@
-x = 5
+line = "     text"
 
-x + 1
+line.strip()
 
-print(x)
+print(line)
