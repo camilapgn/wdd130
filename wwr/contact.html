@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - White Water Rafting</title>
+    <meta name="description" content="Get in touch with White Water Rafting! Find contact information, submit inquiries, and connect with our team.">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <h1>White Water Rafting</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Contact Information</h2>
+            <p><strong>Address:</strong> 123 River Road, Rapids City, USA</p>
+            <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+            <p><strong>Email:</strong> contact@whitewaterrafting.com</p>
+            <div>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=..." 
+                    width="600" 
+                    height="400" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+
+        <section>
+            <h2>Meet Our Team</h2>
+            <div class="employee-profiles">
+                <figure>
+                    <img src="images/employee1.jpg" alt="John - Customer Service">
+                    <figcaption>John, Customer Service</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee2.jpg" alt="Sarah - Manager">
+                    <figcaption>Sarah, Manager</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/employee3.jpg" alt="Emily - Guide">
+                    <figcaption>Emily, Guide</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section>
+            <h2>Send Us a Message</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of Message:</legend>
+                    <input type="radio" id="general" name="purpose" value="general" required>
+                    <label for="general">General Inquiry</label><br>
+                    <input type="radio" id="reservation" name="purpose" value="reservation">
+                    <label for="reservation">Reservation Question</label><br>
+                    <input type="radio" id="suggestion" name="purpose" value="suggestion">
+                    <label for="suggestion">Website Suggestion</label>
+                </fieldset>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <div>
+                    <input type="checkbox" id="newsletter" name="newsletter">
+                    <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 White Water Rafting. All Rights Reserved.</p>
+        <p><a href="wireframe/contact-wireframe.jpg" target="_blank">View Contact Us Wireframe</a></p>
+    </footer>
+</body>
+</html>
